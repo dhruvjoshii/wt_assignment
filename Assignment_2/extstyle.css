@@ -1,0 +1,76 @@
+body
+{
+	background: linear-gradient(to bottom right, #33ccff 0%, #9999ff 100%);
+	font-family: "Segoe UI",Times,sans-serif;
+	color: white;
+	padding: 10px 20px 0px 20px;
+}
+.main .subtext
+{
+	display: flex;
+	flex-direction: column;
+}
+.main .subtext .subsubdiv1
+{
+	color: #ccffcc;
+	overflow: auto;
+	order: 2;
+	background: rgba(255, 153, 255, .5);
+	padding: 3px 3px 3px 3px;
+}
+.main .subtext .subsubdiv2
+{
+	color: #cc33ff;
+	order: 1;
+	background: rgba(255, 255, 102, .5);
+	padding: 3px 3px 3px 3px;
+}
+.main .subtext .subsubdiv3
+{
+	color: #ffff99;
+	order:3;
+	background: rgba(255, 153, 51, .5);
+	padding: 3px 3px 3px 3px;
+}
+#para1::first-letter,#para2::first-letter,#para3::first-letter
+{
+	font-size: 200%;
+  	color: #8A2BE2;
+}
+.main .subtext .subsubdiv1:hover,.main .subtext .subsubdiv2:hover,.main .subtext .subsubdiv3:hover
+{
+	font-size: 150%;
+}
+table
+{
+	border: 3px solid #069420;
+	font-size: 200%;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+#image1
+{
+	display: block;
+	float: right;
+	overflow: auto;
+	margin: auto;
+	border-radius: 40%;
+}
+#image1:hover
+{
+	transform: scaleX(-1);
+	filter: invert(100%);
+
+}
+hr
+{
+	border: 10px solid purple;
+  	border-radius: 5px;
+}
+header
+{
+	font-size:1.5em;
+	font-family: cursive;
+}
+
+

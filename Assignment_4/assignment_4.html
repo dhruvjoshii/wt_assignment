@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 4</title>
+</head>
+<body>
+<script type="text/javascript" src="jscript.js"></script>
+<center><h1>Registrastion Form</h1></center>
+<div style="margin: auto;padding: 30px;height: 400px;width: 550px;border:3px solid grey">
+<form name="form1" style="font-size: 12px" method="post">
+   <input type="text" name="FIRSTNAME" placeholder="First name" onblur="basicheck(document.form1.FIRSTNAME)" required style="width: 172px;padding: 8px 10px;border-radius: 5px">
+
+   <input type="text" name="LASTNAME" placeholder="Last name" onblur="basicheck(document.form1.LASTNAME)" required style="width: 172px;padding: 8px 10px;border-radius: 5px">
+   <br><br>
+   <input type="email"  id="EMAIL" name="EMAIL" placeholder="Email address" onblur="emailcheck()" title="plese follow someone@example.com" required style="width: 374px;padding: 8px 10px;border-radius: 5px">
+   <br><br>
+   <input type="tel" id="telno" name="telno" placeholder="Telephone number" pattern="[0-9]{10,}$" style="width: 374px;padding: 8px 10px;border-radius: 5px" onblur="numcheck()">
+   <br><br>
+   <input type="password" id="password" name="PASSWORD"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="New password" required style="width: 374px;padding: 8px 10px;border-radius: 5px" onblur="passcheck()">
+   <br><br>
+   <input type="password" id="cpassword" name="CPASSWORD"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Confirm password" required style="width: 374px;padding: 8px 10px;border-radius: 5px" onblur="cpasscheck()">
+   <br><br>
+   <label style="font-size: 14px">Gender</label>
+	<br>
+	<input  required type="radio" id="male" name="gender" value="male">
+	<label style="font-size: 14px" for="male">Male</label>
+	<input required type="radio" id="female" name="gender" value="female">
+	<label  style="font-size: 14px" for="female">Female</label>
+	<input required type="radio" id="other" name="gender" value="other">
+	<label style="font-size: 14px" for="other">Other</label>
+	<br><br>
+   <input type="submit" onclick="completed(document.form1.FIRSTNAME,document.form1.LASTNAME)">
+   <input type="reset">
+</form>
+</div>
+</body>
+</html>
